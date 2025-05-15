@@ -1,5 +1,7 @@
 # Smart Building & Sektorenkopplung
 
+[![DOI](https://zenodo.org/badge/984004800.svg)](https://doi.org/10.5281/zenodo.15423354)
+
 ## Taxonomie für innovative Gebäudeautomatisierung, Haustechnik und Sektorenkopplung
 
 Dieses Repository enthält eine offene Taxonomie zur Klassifizierung von Produkten, Konzepten und Technologien im Bereich innovativer Gebäudeautomatisierung, Haustechnik und Sektorenkopplung. Das Ziel ist die Schaffung einer gemeinsamen Struktur und Terminologie, die für Produktkataloge, Wissensdatenbanken, Forschung und die allgemeine Orientierung in diesem komplexen Feld genutzt werden kann.
