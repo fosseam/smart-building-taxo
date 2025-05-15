@@ -1,0 +1,309 @@
+[
+  {
+    "pos": "1",
+    "id": "gen",
+    "name": "Energieerzeugung",
+    "description": "Produkte und Systeme, die Energie erzeugen.",
+    "nodes": [
+      {
+        "pos": "1.1",
+        "id": "gen-pwr",
+        "name": "Stromerzeugung",
+        "description": "Systeme zur Erzeugung elektrischer Energie.",
+        "nodes": [
+          {"pos": "1.1.1", "id": "gen-pv", "name": "Photovoltaik", "description": "Solarmodule, Montagesysteme etc.", "nodes": []},
+          {"pos": "1.1.2", "id": "gen-wind", "name": "Kleinwindanlagen", "description": "Turbinen und Zubehör für Kleinstanlagen.", "nodes": []},
+          {"pos": "1.1.3", "id": "gen-bio", "name": "Biomasse & Abfall (Strom)", "description": "Biogasanlagen, BHKWs für Biogas, etc.", "nodes": []}
+        ]
+      },
+      {
+        "pos": "1.2",
+        "id": "gen-heat",
+        "name": "Wärmeerzeugung",
+        "description": "Systeme zur Erzeugung thermischer Energie.",
+        "nodes": [
+          {"pos": "1.2.1", "id": "gen-st", "name": "Solarthermie", "description": "Kollektoren, Speicher etc.", "nodes": []},
+          {"pos": "1.2.2", "id": "gen-hp", "name": "Wärmepumpen", "description": "Verschiedene Typen (Luft/Wasser, Sole/Wasser, Wasser/Wasser).", "nodes": [
+              {"pos": "1.2.2.1", "id": "gen-hp-aw", "name": "Luft/Wasser Wärmepumpen", "description": "Nutzen Außenluft als Wärmequelle.", "nodes": []},
+              {"pos": "1.2.2.2", "id": "gen-hp-sw", "name": "Sole/Wasser Wärmepumpen", "description": "Nutzen Erdreich/Grundwasser als Wärmequelle.", "nodes": []}
+          ]},
+          {"pos": "1.2.3", "id": "gen-ksl", "name": "Heizkessel", "description": "Biomasse-, Pellet-, Gas-Brennwertkessel mit Smart-Funktionen.", "nodes": []},
+          {"pos": "1.2.4", "id": "gen-waste", "name": "Wärme aus Abfall/Sek.", "description": "Systeme zur Nutzung von Abwärme (z.B. Server, Abwasser).", "nodes": []}
+        ]
+      }
+    ]
+  },
+  {
+    "pos": "2",
+    "id": "store",
+    "name": "Energiespeicherung",
+    "description": "Produkte und Systeme zur Speicherung verschiedener Energieformen.",
+    "nodes": [
+      {
+        "pos": "2.1",
+        "id": "store-pwr",
+        "name": "Stromspeicher",
+        "description": "Systeme zur Speicherung elektrischer Energie.",
+        "nodes": [
+          {"pos": "2.1.1", "id": "store-batt", "name": "Batteriespeicher", "description": "AC- und DC-gekoppelte Systeme, verschiedene Technologien.", "nodes": [
+              {"pos": "2.1.1.1", "id": "store-batt-li", "name": "Lithium-Ionen Batterien", "description": "LiFePO4, NMC etc.", "nodes": []},
+              {"pos": "2.1.1.2", "id": "store-batt-rf", "name": "Redox-Flow Batterien", "description": "...", "nodes": []},
+              {"pos": "2.1.1.3", "id": "store-batt-lead", "name": "Blei-Säure Batterien", "description": "...", "nodes": []}
+          ]},
+          {"pos": "2.1.2", "id": "store-other", "name": "Weitere Stromspeicher", "description": "Mechanische, chemische (außer Batterien) Speicher.", "nodes": []}
+        ]
+      },
+      {
+        "pos": "2.2",
+        "id": "store-therm",
+        "name": "Wärme- & Kältespeicher",
+        "description": "Systeme zur Speicherung thermischer Energie.",
+        "nodes": [
+          {"pos": "2.2.1", "id": "store-therm-hot", "name": "Wärmespeicher", "description": "Pufferspeicher, Warmwasserspeicher.", "nodes": []},
+          {"pos": "2.2.2", "id": "store-therm-cold", "name": "Kältespeicher", "description": "Eisspeicher, Latentwärmespeicher.", "nodes": []}
+        ]
+      }
+    ]
+  },
+  {
+    "pos": "3",
+    "id": "cons",
+    "name": "Energieverbraucher & Endgeräte",
+    "description": "Geräte, die Energie verbrauchen und oft steuerbar sind.",
+    "nodes": [
+      {
+        "pos": "3.1",
+        "id": "cons-klima",
+        "name": "Raumklima (Heizen, Kühlen, Lüften)",
+        "description": "Systeme zur Konditionierung der Raumluft.",
+        "nodes": [
+          {"pos": "3.1.1", "id": "cons-klima-emit", "name": "Wärme-/Kälteabgabe", "description": "Heizkörper, Fußbodenheizung etc.", "nodes": []},
+          {"pos": "3.1.2", "id": "cons-klima-dist", "name": "Verteilungssysteme Klima", "description": "Pumpengruppen, Verteiler etc.", "nodes": []},
+          {"pos": "3.1.3", "id": "cons-klima-vent", "name": "Lüftungssysteme", "description": "Zentrale/Dezentrale Lüftungsanlagen.", "nodes": []},
+          {"pos": "3.1.4", "id": "cons-klima-ac", "name": "Klimatisierung", "description": "Split-Klima, VRF, Chiller etc.", "nodes": []}
+        ]
+      },
+      {
+        "pos": "3.2",
+        "id": "cons-mobil",
+        "name": "Elektromobilität",
+        "description": "Infrastruktur und Geräte für Elektromobilität.",
+        "nodes": [
+          {"pos": "3.2.1", "id": "cons-mobil-ac", "name": "AC Ladestationen", "description": "Wallboxen und Ladesäulen mit Wechselstrom.", "nodes": []},
+          {"pos": "3.2.2", "id": "cons-mobil-dc", "name": "DC Ladestationen", "description": "Schnellladestationen mit Gleichstrom.", "nodes": []},
+          {"pos": "3.2.3", "id": "cons-mobil-swap", "name": "Swapping Stationen", "description": "Infrastruktur zum Tausch von Fahrzeugbatterien."},
+          {"pos": "3.2.4", "id": "cons-mobil-induk", "name": "Induktives Laden", "description": "Systeme für kabelloses Laden."}
+        ]
+      },
+       {
+        "pos": "3.3",
+        "id": "cons-elec",
+        "name": "Steuerbare elektrische Lasten",
+        "description": "Elektrische Verbraucher, die dynamisch angesteuert werden können.",
+        "nodes": [
+          {"pos": "3.3.1", "id": "cons-elec-plug", "name": "Smarte Steckdosen/Schalter", "description": "Einfache Integration bestehender Geräte.", "nodes": []},
+          {"pos": "3.3.2", "id": "cons-elec-haus", "name": "Smarte Haushaltsgeräte", "description": "Weiße Ware etc. mit SmartGrid/EMS Schnittstelle.", "nodes": []},
+          {"pos": "3.3.3", "id": "cons-elec-ind", "name": "Industrielle Lasten", "description": "Steuerbare Antriebe, Maschinen etc.", "nodes": []}
+        ]
+      },
+      {
+        "pos": "3.4",
+        "id": "cons-light",
+        "name": "Beleuchtung",
+        "description": "Smarte Beleuchtungssysteme und Komponenten.",
+        "nodes": [
+            {"pos": "3.4.1", "id": "cons-light-sys", "name": "Beleuchtungssysteme", "description": "Komplette smarte Beleuchtungslösungen.", "nodes": []},
+            {"pos": "3.4.2", "id": "cons-light-comp", "name": "Steuerbare Leuchten/Module", "description": "Einzelne Leuchten oder Module.", "nodes": []}
+        ]
+      }
+    ]
+  },
+   {
+    "pos": "4",
+    "id": "conv-dist",
+    "name": "Energie-Umwandlung & -Verteilung",
+    "description": "Komponenten, die Energieformen umwandeln oder im System verteilen.",
+    "nodes": [
+      {
+        "pos": "4.1",
+        "id": "conv-inv-chg",
+        "name": "Wechselrichter & Laderegler",
+        "description": "Umwandlung von DC in AC und Steuerung von Ladevorgängen.",
+        "nodes": [
+            {"pos": "4.1.1", "id": "conv-inv-pv", "name": "PV-Wechselrichter", "description": "Umwandlung von Solar-DC in AC.", "nodes": []},
+            {"pos": "4.1.2", "id": "conv-inv-batt", "name": "Batterie-Wechselrichter", "description": "Umwandlung von Batterie-DC in AC oder umgekehrt.", "nodes": []},
+            {"pos": "4.1.3", "id": "conv-inv-hyb", "name": "Hybrid-Wechselrichter", "description": "Vereint PV- und Batterie-Funktion.", "nodes": []},
+            {"pos": "4.1.4", "id": "conv-chg-ctr", "name": "Laderegler", "description": "Steuerung der Batterieladung von PV oder anderen DC-Quellen.", "nodes": []}
+        ]
+      },
+      {
+        "pos": "4.2",
+        "id": "conv-trans-dcdc",
+        "name": "Transformatoren & DC/DC-Wandler",
+        "description": "Anpassung von Spannungspegeln.",
+        "nodes": [
+            {"pos": "4.2.1", "id": "conv-trans", "name": "Transformatoren", "description": "Anpassung AC-Spannungen.", "nodes": []},
+            {"pos": "4.2.2", "id": "conv-dcdc", "name": "DC/DC-Wandler", "description": "Anpassung DC-Spannungen.", "nodes": []}
+        ]
+      },
+      {
+        "pos": "4.3",
+        "id": "conv-dist-sys",
+        "name": "Verteilsysteme & Übergabe",
+        "description": "Systeme zur Verteilung von Energie (elektrisch, thermisch).",
+        "nodes": [
+            {"pos": "4.3.1", "id": "conv-dist-elec", "name": "Elektrische Verteilung", "description": "Smarte Unterverteilungen, Schaltanlagen.", "nodes": []},
+            {"pos": "4.3.2", "id": "conv-dist-therm", "name": "Thermische Verteilung", "description": "Pumpengruppen, Mischer etc.", "nodes": []}
+        ]
+      },
+       {
+        "pos": "4.4",
+        "id": "conv-heatrec",
+        "name": "Systeme zur Wärmerückgewinnung",
+        "description": "Produkte zur Gewinnung und Bereitstellung von Abwärme.",
+        "nodes": [
+             {"pos": "4.4.1", "id": "conv-heatrec-exch", "name": "Wärmetauscher", "description": "Zur Übergabe von Wärme zwischen Medien.", "nodes": []},
+             {"pos": "4.4.2", "id": "conv-heatrec-mod", "name": "Integrationsmodule Abwärme", "description": "Schnittstellen zur Einspeisung von Abwärme.", "nodes": []}
+        ]
+      }
+    ]
+  },
+  {
+    "pos": "5",
+    "id": "mgmt-auto",
+    "name": "Management-, Steuerungs- & Automatisierungssysteme",
+    "description": "Die zentrale Intelligenz des Systems.",
+    "nodes": [
+      {
+        "pos": "5.1",
+        "id": "mgmt-plat",
+        "name": "Plattformen & Zentralen",
+        "description": "Software- oder Hardware-basierte Gateways und Managementsysteme.",
+         "nodes": [
+            {"pos": "5.1.1", "id": "mgmt-plat-ha", "name": "Home Automation Plattformen", "description": "Breitband-Systeme für Wohngebäude (z.B. Home Assistant, OpenHAB, ioBroker, FHEM).", "nodes": []},
+            {"pos": "5.1.2", "id": "mgmt-plat-ems", "name": "Energie-Management Systeme (EMS)", "description": "Spezialisierte Systeme für Energiefluss-Optimierung (z.B. OpenEMS).", "nodes": []},
+            {"pos": "5.1.3", "id": "mgmt-plat-bms", "name": "Building Management Systems (BMS)", "description": "Umfassende Systeme für größere Gebäude und Gewerbe.", "nodes": []},
+            {"pos": "5.1.4", "id": "mgmt-plat-ind", "name": "Industrieautomatisierung (MES/SCADA)", "description": "Systeme mit Energie-Monitoring/Steuerungsfunktionen im industriellen Kontext.", "nodes": []}
+         ]
+      },
+      {
+        "pos": "5.2",
+        "id": "mgmt-ctrl-gw",
+        "name": "Steuerungsmodule & Gateways",
+        "description": "Hardware-Komponenten zur Logikverarbeitung und Protokollübersetzung.",
+         "nodes": [
+             {"pos": "5.2.1", "id": "mgmt-ctrl", "name": "Logik-Controller (PLCs/Industrie PCs)", "description": "Programmierbare Steuerungen.", "nodes": []},
+             {"pos": "5.2.2", "id": "mgmt-io", "name": "I/O-Module", "description": "Digitale/Analoge Ein- und Ausgänge.", "nodes": []},
+             {"pos": "5.2.3", "id": "mgmt-gw", "name": "Protokoll-Gateways", "description": "Übersetzung zwischen verschiedenen Kommunikationsstandards.", "nodes": []}
+         ]
+      },
+       {
+        "pos": "5.3",
+        "id": "mgmt-sens",
+        "name": "Sensorik",
+        "description": "Geräte zur Erfassung von Zuständen und Messwerten.",
+        "nodes": [
+            {"pos": "5.3.1", "id": "mgmt-sens-elec", "name": "Elektrische Sensorik", "description": "Strom-, Spannungs-, Leistungssensoren.", "nodes": []},
+            {"pos": "5.3.2", "id": "mgmt-sens-therm", "name": "Thermische Sensorik", "description": "Temperatur-, Wärmemengensensoren.", "nodes": []},
+            {"pos": "5.3.3", "id": "mgmt-sens-env", "name": "Umweltsensorik", "description": "Feuchte, CO2, Helligkeit, Luftqualität etc.", "nodes": []},
+            {"pos": "5.3.4", "id": "mgmt-sens-pres", "name": "Präsenz- & Bewegungssensorik", "description": "Für Automatisierung und Sicherheit.", "nodes": []},
+            {"pos": "5.3.5", "id": "mgmt-sens-phys", "name": "Physikalische Sensorik", "description": "Druck, Füllstand, Durchfluss etc.", "nodes": []}
+        ]
+      },
+      {
+        "pos": "5.4",
+        "id": "mgmt-act",
+        "name": "Aktorik",
+        "description": "Geräte zur direkten Beeinflussung von Anlagen und Geräten.",
+        "nodes": [
+            {"pos": "5.4.1", "id": "mgmt-act-switch", "name": "Schaltaktoren", "description": "Ein/Aus-Schalten von Verbrauchern.", "nodes": []},
+            {"pos": "5.4.2", "id": "mgmt-act-dim", "name": "Dimmaktoren", "description": "Steuerung von Lichtintensität.", "nodes": []},
+            {"pos": "5.4.3", "id": "mgmt-act-valve", "name": "Ventilaktoren", "description": "Steuerung von Heizungs-/Kühlventilen.", "nodes": []},
+            {"pos": "5.4.4", "id": "mgmt-act-motor", "name": "Motoraktoren", "description": "Steuerung von Jalousien, Klappen, Pumpen etc.", "nodes": []}
+         ]
+      }
+    ]
+  },
+   {
+    "pos": "6",
+    "id": "comm-infra",
+    "name": "Kommunikation & Infrastruktur",
+    "description": "Technologien und Geräte für die Vernetzung und Datenübertragung.",
+    "nodes": [
+      {
+        "pos": "6.1",
+        "id": "comm-wired",
+        "name": "Kabelgebundene Kommunikation",
+        "description": "Protokolle und Komponenten für verdrahtete Netzwerke.",
+        "nodes": [
+            {"pos": "6.1.1", "id": "comm-wired-ip", "name": "Ethernet / IP-basiert", "description": "Standard Netzwerkinfrastruktur.", "nodes": []},
+            {"pos": "6.1.2", "id": "comm-wired-bus", "name": "Feldbus-Systeme", "description": "KNX TP, Modbus RTU, CAN Bus, RS485 etc.", "nodes": []},
+            {"pos": "6.1.3", "id": "comm-wired-mbus", "name": "M-Bus", "description": "Spezifisch für Zählerauslesung.", "nodes": []}
+        ]
+      },
+      {
+        "pos": "6.2",
+        "id": "comm-wireless",
+        "name": "Funkkommunikation",
+        "description": "Protokolle und Komponenten für drahtlose Netzwerke.",
+        "nodes": [
+            {"pos": "6.2.1", "id": "comm-wireless-short", "name": "Kurzreichweite (Inhouse)", "description": "WLAN, Zigbee, Z-Wave, Matter/Thread, Bluetooth.", "nodes": []},
+            {"pos": "6.2.2", "id": "comm-wireless-long", "name": "Langreichweite (LPWAN/Mobilfunk)", "description": "LoRaWAN, Sigfox, NB-IoT, LTE-M.", "nodes": []},
+            {"pos": "6.2.3", "id": "comm-wireless-spec", "name": "Spezifische Funkprotokolle", "description": "EnOcean, proprietäre Systeme.", "nodes": []}
+        ]
+      },
+       {
+        "pos": "6.3",
+        "id": "comm-gw-router",
+        "name": "Netzwerk-Gateways & Router",
+        "description": "Geräte zur Verbindung und Verwaltung von Netzwerken.",
+        "nodes": [
+             {"pos": "6.3.1", "id": "comm-gw", "name": "Gateways", "description": "Verbindung verschiedener Netzwerke/Protokolle.", "nodes": []},
+             {"pos": "6.3.2", "id": "comm-router", "name": "Router & Switche", "description": "Klassische Netzwerkgeräte mit erweitertem Management.", "nodes": []}
+        ]
+      },
+       {
+        "pos": "6.4",
+        "id": "comm-logger",
+        "name": "Datenlogger",
+        "description": "Geräte zur Erfassung, Speicherung und Übertragung von Messwerten.",
+        "nodes": [
+             {"pos": "6.4.1", "id": "comm-logger-energy", "name": "Energie", "description": "Datenlogger spezifisch für Stromdaten."},
+             {"pos": "6.4.2", "id": "comm-logger-gas-water", "name": "Gas & Wasser", "description": "Datenlogger spezifisch für Gas- und Wasserzählerdaten."},
+             {"pos": "6.4.3", "id": "comm-logger-env", "name": "Umwelt", "description": "Datenlogger für Klima-, Qualitätsdaten etc."},
+             {"pos": "6.4.4", "id": "comm-logger-system", "name": "System", "description": "Datenlogger für den Status und die Performance von Systemkomponenten."}
+        ]
+      }
+    ]
+  },
+   {
+    "pos": "7",
+    "id": "mon-an",
+    "name": "Monitoring, Analyse & Software",
+    "description": "Werkzeuge und Dienste zur Erfassung, Visualisierung und Optimierung von Systemdaten.",
+    "nodes": [
+      {
+        "pos": "7.1",
+        "id": "mon-an-sw",
+        "name": "Software & Plattformen (Monitoring/Analyse)",
+        "description": "Softwarelösungen für Datenerfassung, -analyse und Visualisierung.",
+        "nodes": [
+             {"pos": "7.1.1", "id": "mon-an-sw-mon", "name": "Monitoring Software/Plattformen", "description": "Echtzeit-Überwachung und historische Daten."},
+             {"pos": "7.1.2", "id": "mon-an-sw-an", "name": "Analyse Software/Plattformen", "description": "Tools für Effizienzanalysen, Prognosen."},
+             {"pos": "7.1.3", "id": "mon-an-sw-vis", "name": "Visualisierungs-Tools", "description": "Erstellung von Dashboards und Reports."}
+        ]
+      },
+      {
+        "pos": "7.2",
+        "id": "mon-an-meas",
+        "name": "Zähler & Messtechnik (Hardware)",
+        "description": "Hardware zur präzisen Erfassung von Verbräuchen und Erzeugung (primäre Datenquellen).",
+        "nodes": [
+             {"pos": "7.2.1", "id": "mon-an-meas-pwr", "name": "Stromzähler", "description": "Smarte Zähler, Unterzähler."},
+             {"pos": "7.2.2", "id": "mon-an-meas-therm", "name": "Wärme-/Kältemengenzähler", "description": "Zur Erfassung thermischer Energie."},
+             {"pos": "7.2.3", "id": "mon-an-meas-gas-water", "name": "Gas- & Wasserzähler", "description": "Zähler mit smarter Ausleseschnittstelle."}
+        ]
+      }
+    ]
+  }
+]

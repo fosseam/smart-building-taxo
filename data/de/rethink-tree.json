@@ -1,0 +1,121 @@
+[
+  {
+    "pos": "1",
+    "id": "re-think",
+    "name": "Re:Thinking & Kreislaufwirtschaft",
+    "description": "Konzepte, Technologien und Prinzipien, die über lineare Prozesse hinausgehen und Kreisläufe evozieren.",
+    "nodes": [
+      {
+        "pos": "1.1",
+        "id": "re-op",
+        "name": "Operationelle Kreisläufe",
+        "description": "Nutzung von Energie- und Stoffflüssen innerhalb des Systems oder mit der direkten Umgebung während des Betriebs.",
+        "nodes": [
+          {
+            "pos": "1.1.1",
+            "id": "re-op-bidi",
+            "name": "Bidirektionale Flüsse",
+            "description": "Ermöglicht Energie- oder Stoffflüsse in zwei Richtungen (z.B. Einspeisung, Abgabe) im operativen Betrieb.",
+            "nodes": [
+              {"pos": "1.1.1.1", "id": "re-op-bidi-pwr", "name": "Elektrisch (V2G, V2H, Speicher)", "description": "Rückspeisung von Strom aus Speichern (Fahrzeugbatterien, Heimspeicher) ins Netz oder Gebäude.", "nodes": []},
+              {"pos": "1.1.1.2", "id": "re-op-bidi-therm", "name": "Thermisch (Speicher-Management)", "description": "Dynamisches Laden/Entladen thermischer Speicher basierend auf Verfügbarkeit/Bedarf.", "nodes": []}
+            ]
+          },
+          {
+            "pos": "1.1.2",
+            "id": "re-op-waste",
+            "name": "Abfall- & Sekundärressourcennutzung",
+            "description": "Verwertung von Reststoffen und Energie aus anderen Prozessen im laufenden Betrieb.",
+            "nodes": [
+              {
+                "pos": "1.1.2.1",
+                "id": "re-op-waste-heat",
+                "name": "Abwärmenutzung",
+                "description": "Nutzung von Abwärme zur Wärmeerzeugung oder Kühlung.",
+                "nodes": [
+                    {"pos": "1.1.2.1.1", "id": "re-op-waste-heat-it", "name": "IT-Abwärme (Server, Mining)", "description": "Nutzung der Abwärme von Rechenzentren oder Mining-Hardware."},
+                    {"pos": "1.1.2.1.2", "id": "re-op-waste-heat-ind", "name": "Industrielle/Gewerbliche Abwärme", "description": "Nutzung von Prozesswärme aus Industrie und Gewerbe."},
+                    {"pos": "1.1.2.1.3", "id": "re-op-waste-heat-water", "name": "Wasser (Grauwasser, Abwasser)", "description": "Nutzung von Wärme aus Abwasser oder Grauwasser."},
+                    {"pos": "1.1.2.1.4", "id": "re-op-waste-heat-air", "name": "Abluft (WRG)", "description": "Rückgewinnung von Wärme aus Abluftströmen (z.B. Lüftung)."}
+                 ]
+              },
+              {"pos": "1.1.2.2", "id": "re-op-waste-bio", "name": "Organische Abfälle (Energie/Stoff)", "description": "Verwertung von Bioabfällen (z.B. Biogas, Kompostheizung) oder menschlicher Ausscheidungen.", "nodes": []},
+              {"pos": "1.1.2.3", "id": "re-op-waste-prod", "name": "Produkt-spezifische Reststoffe", "description": "Nutzung von Sekundärprodukten oder Abfällen, die spezifisch bei der Nutzung eines Hauptprodukts anfallen.", "nodes": []}
+            ]
+          }
+        ]
+      },
+      {
+        "pos": "1.2",
+        "id": "re-life",
+        "name": "Produktlebenszyklus",
+        "description": "Aspekte der Nachhaltigkeit im Design, Nutzung und am Ende des Lebenszyklus von Produkten.",
+        "nodes": [
+          {
+            "pos": "1.2.1",
+            "id": "re-life-design",
+            "name": "Designprinzipien",
+            "description": "Wie Produkte entworfen werden, um Nachhaltigkeit im Lebenszyklus zu fördern.",
+            "nodes": [
+              {"pos": "1.2.1.1", "id": "re-life-design-mod", "name": "Modularität / Upgradability", "description": "Produkte, die leicht erweitert, angepasst oder repariert werden können.", "nodes": []},
+              {"pos": "1.2.1.2", "id": "re-life-design-repair", "name": "Reparierbarkeit / Servicebarkeit", "description": "Produkte, die für Reparatur und Wartung konzipiert sind (Verfügbarkeit Ersatzteile, Dokumentation).", "nodes": []},
+              {"pos": "1.2.1.3", "id": "re-life-design-materials", "name": "Materialienwahl / Rezyklate", "description": "Verwendung von recycelten, langlebigen oder leicht trennbaren Materialien.", "nodes": []},
+              {"pos": "1.2.1.4", "id": "re-life-design-reduce", "name": "Effizienz durch Design", "description": "Produkte, die durch ihr grundlegendes Design energie- oder ressourceneffizient sind.", "nodes": []}
+            ]
+          },
+          {
+            "pos": "1.2.2",
+            "id": "re-life-eol",
+            "name": "End-of-Life Management",
+            "description": "Wie mit Produkten nach ihrer Nutzungsdauer umgegangen wird.",
+            "nodes": [
+              {"pos": "1.2.2.1", "id": "re-life-eol-recycling", "name": "Recyclingfähigkeit", "description": "Wie gut die Materialien eines Produkts recycelt werden können.", "nodes": []},
+              {"pos": "1.2.2.2", "id": "re-life-eol-reuse", "name": "Wiederverwendbarkeit", "description": "Eignung von Produkten oder Komponenten zur Wiederverwendung (z.B. Second Life Batterien).", "nodes": []}
+            ]
+          }
+        ]
+      },
+       {
+        "pos": "1.3",
+        "id": "re-reduce",
+        "name": "Reduzieren & Effizienz",
+        "description": "Strategien, Technologien und Produkte zur Minimierung des Energie- und Ressourcenverbrauchs im Betrieb.",
+        "nodes": [
+          {
+            "pos": "1.3.1",
+            "id": "re-reduce-smart",
+            "name": "Smarte Verbrauchsoptimierung",
+            "description": "Technologien und Strategien zur intelligenten Steuerung und Anpassung des Verbrauchs.",
+            "nodes": [
+              {"pos": "1.3.1.1", "id": "re-reduce-smart-load", "name": "Lastmanagement", "description": "Steuerung von Verbrauchern basierend auf Energieverfügbarkeit, Netzsignalen oder Prioritäten."},
+              {"pos": "1.3.1.2", "id": "re-reduce-smart-predict", "name": "Prognosebasierte Steuerung", "description": "Anpassung des Verbrauchs basierend auf Wetter-, Last- oder Erzeugungsprognosen."},
+              {"pos": "1.3.1.3", "id": "re-reduce-smart-user", "name": "Nutzer-Verhalten / Visualisierung", "description": "Befähigung der Nutzer durch Information (Visualisierung) oder einfache Steuerung zur Reduktion beizutragen."}
+            ]
+          },
+          {
+            "pos": "1.3.2",
+            "id": "re-reduce-efficomp",
+            "name": "Hocheffizienz-Komponenten",
+            "description": "Produkte, die durch ihre überdurchschnittliche Energieeffizienz den Verbrauch reduzieren.",
+            "nodes": [
+              {"pos": "1.3.2.1", "id": "re-reduce-efficomp-hvac", "name": "Effiziente Klima-/Wärmeerzeuger", "description": "Hocheffiziente Wärmepumpen (hoher COP/SCOP), Lüftungsanlagen mit sehr hoher WRG."},
+              {"pos": "1.3.2.2", "id": "re-reduce-efficomp-elec", "name": "Effiziente Elektroverbraucher", "description": "Hocheffiziente Antriebe, Netzteile, Beleuchtung (Jahreseffizienz)."
+              }
+            ]
+          },
+          {
+            "pos": "1.3.3",
+            "id": "re-reduce-passive",
+            "name": "Passive & Bauliche Maßnahmen",
+            "description": "Maßnahmen, die ohne aktive Steuerung oder über das Gebäude selbst zur Reduktion beitragen.",
+            "nodes": [
+                {"pos": "1.3.3.1", "id": "re-reduce-passive-insulation", "name": "Dämmung & Fenster", "description": "Hochwertige Gebäudehülle zur Minimierung von Wärme-/Kälteverlusten."},
+                {"pos": "1.3.3.2", "id": "re-reduce-passive-shading", "name": "Sonnenschutz / Verschattung", "description": "Passive oder automatische Systeme zur Reduktion des Kühlbedarfs."},
+                {"pos": "1.3.3.3", "id": "re-reduce-passive-vent", "name": "Natürliche/Hybride Lüftung", "description": "Konzepte, die mechanische Lüftung ergänzen oder ersetzen."}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
