@@ -144,6 +144,7 @@ Um die Struktur der Taxonomien besser zu überblicken, werden hier die ASCII-Bau
 
 #### coupling-tree
 
+```
 └── 1: Sektorenkopplungskonzepte
     ├── 1.1: Strom-Kopplungskonzepte
     │   ├── 1.1.1: Power-to-X Umwandlungen (P2X)
@@ -193,27 +194,47 @@ Um die Struktur der Taxonomien besser zu überblicken, werden hier die ASCII-Bau
         ├── 1.4.4: Systemische Flexibilitätskonzepte
         └── 1.4.5: Netzinteraktion (Strom-, Wärme-, Gasnetz)
 
+```
+
 #### rethink-tree
 
 
+```
+└── 1: Re:Thinking & Kreislaufwirtschaft
+    ├── 1.1: Operationelle Kreisläufe
+    │   ├── 1.1.1: Bidirektionale Flüsse
+    │   │   ├── 1.1.1.1: Elektrisch (V2G, V2H, Speicher)
+    │   │   └── 1.1.1.2: Thermisch (Speicher-Management)
+    │   └── 1.1.2: Abfall- & Sekundärressourcennutzung
+    │       ├── 1.1.2.1: Abwärmenutzung
+    │       │   ├── 1.1.2.1.1: IT-Abwärme (Server, Mining)
+    │       │   ├── 1.1.2.1.2: Industrielle/Gewerbliche Abwärme
+    │       │   ├── 1.1.2.1.3: Wasser (Grauwasser, Abwasser)
+    │       │   └── 1.1.2.1.4: Abluft (WRG)
+    │       ├── 1.1.2.2: Organische Abfälle (Energie/Stoff)
+    │       └── 1.1.2.3: Produkt-spezifische Reststoffe
+    ├── 1.2: Produktlebenszyklus
+    │   ├── 1.2.1: Designprinzipien
+    │   │   ├── 1.2.1.1: Modularität / Upgradability
+    │   │   ├── 1.2.1.2: Reparierbarkeit / Servicebarkeit
+    │   │   ├── 1.2.1.3: Materialienwahl / Rezyklate
+    │   │   └── 1.2.1.4: Effizienz durch Design
+    │   └── 1.2.2: End-of-Life Management
+    │       ├── 1.2.2.1: Recyclingfähigkeit
+    │       └── 1.2.2.2: Wiederverwendbarkeit
+    └── 1.3: Reduzieren & Effizienz
+        ├── 1.3.1: Smarte Verbrauchsoptimierung
+        │   ├── 1.3.1.1: Lastmanagement
+        │   ├── 1.3.1.2: Prognosebasierte Steuerung
+        │   └── 1.3.1.3: Nutzer-Verhalten / Visualisierung
+        ├── 1.3.2: Hocheffizienz-Komponenten
+        │   ├── 1.3.2.1: Effiziente Klima-/Wärmeerzeuger
+        │   └── 1.3.2.2: Effiziente Elektroverbraucher
+        └── 1.3.3: Passive & Bauliche Maßnahmen
+            ├── 1.3.3.1: Dämmung & Fenster
+            ├── 1.3.3.2: Sonnenschutz / Verschattung
+            └── 1.3.3.3: Natürliche/Hybride Lüftung
+
+```
 
 
-
-
-
-## Nutzung der Taxonomie
-
-Die JSON-Dateien können direkt in Anwendungen (z.B. für Produktfilter, Navigationsmenüs) oder als Grundlage für weitere Analysen und Visualisierungen verwendet werden. Die `id` dient als stabile Referenz, die `pos` zur hierarchischen Anzeige.
-
-## Zitieren
-
-Dieses Repository ist mit Zenodo.org integriert, um langfristige Archivierung und Zitierbarkeit sicherzustellen. Jedes Release des Repositories erhält einen eigenen DOI.
-
-Bitte zitiere die Taxonomie unter Verwendung des DOI, wenn du sie in Publikationen, Software oder anderen Werken nutzt.
-
-Aktueller DOI: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xyz)](https://doi.org/10.5281/zenodo.xyz)
-*(Hinweis: Denke daran, den Platzhalter für den DOI und das Badge durch die von Zenodo bereitgestellten Werte zu ersetzen, nachdem du das erste Release erstellt hast.)*
-
-## Lizenz
-
-Dieses Projekt ist unter der **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** Lizenz lizenziert. Details dazu findest du in der [LICENSE.md](LICENSE.md) Datei.
